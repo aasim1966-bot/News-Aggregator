@@ -1,10 +1,19 @@
 {
   "version": 2,
   "builds": [
-    { "src": "package.json", "use": "@vercel/node" }
+    {
+      "src": "dist/server.cjs",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-    { "src": "/api/(.*)", "destination": "/dist/server.cjs" },
-    { "src": "/(.*)", "destination": "/dist/$1" }
+    {
+      "src": "/assets/(.*)",
+      "dest": "/dist/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dist/server.cjs"
+    }
   ]
 }
