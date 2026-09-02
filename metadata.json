@@ -1,0 +1,6 @@
+{
+  "name": "thereviser.co",
+  "description": "thereviser.co - Verified news intelligence platform fetching global and Pakistan news every 15 minutes, deduplicating headlines, and synthesizing rewritten articles with full source attribution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
